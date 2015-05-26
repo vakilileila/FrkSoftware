@@ -61,46 +61,6 @@
     window.onload = init();
 </script>
      
-    <!-- function js for menu-->
-    <script>
-		$(function() {
-			var pull 		= $('#pull');
-				menu 		= $('nav ul');
-				menuHeight	= menu.height();
-
-			$(pull).on('click', function(e) {
-				e.preventDefault();
-				menu.slideToggle();
-			});
-
-			$(window).resize(function(){
-        		var w = $(window).width();
-        		if(w > 320 && menu.is(':hidden')) {
-        			menu.removeAttr('style');
-        		}
-    		});
-		});
-	</script>
-    <!-- end function js for menu-->
-     <!-- js effect menu -->
-<script src="js/classie.js"></script>
-<script>
-    function init() {
-        window.addEventListener('scroll', function(e){
-            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
-                shrinkOn = 100,
-                nav = document.querySelector("nav");
-            if (distanceY > shrinkOn) {
-                classie.add(nav,"smaller");
-            } else {
-                if (classie.has(nav,"smaller")) {
-                    classie.remove(nav,"smaller");
-                }
-            }
-        });
-    }
-    window.onload = init();
-</script>
     
    
     
@@ -117,7 +77,7 @@
 </div>
 <div class="col-com-3">
 
-<span class="phone_frk ">88670621</span>
+<span class="phone_frk "></span>
 
 
 </div>
@@ -138,7 +98,7 @@
 </header>
 
     <article>
-    <section>
+    
    <div style="width:100%; float:left;  background-color:#efefef; margin-top:70px;
    ">
    <!--social network--->
@@ -235,7 +195,7 @@
                    <div u=caption t="*" class="captionOrange text-slide"  > ارتقای بهره وری سازمانی </div>
                  </div>
                  <div> <a u=image href="#"><img src="images/003.jpg" alt="touch swipe banner rotator" /></a>
-                   <div u=caption t="*" class="captionOrange text-slide"  > بالا بردن سرعت انجام کار در سازمان ها </div>
+                   <div u=caption t="*" class="captionOrange text-slide"  > بالا بردن سرعت انجام کار در سازمان </div>
                  </div>
                </div>
                <!-- Bullet Navigator Skin Begin -->
@@ -355,7 +315,7 @@
        <!-- Jssor Slider End -->
      </div>
    </div> 
-    </section>
+   
     <section
      class="container" >
     <div class="row wrap" >
@@ -458,8 +418,8 @@
     <script type="text/javascript" src="js/jssor.slider.js"></script>
     <script type="text/javascript" src="js/fadeSlideShow.js"></script>
     
-    /* script scroll item body */
-    <script type="text/javascript">
+    
+<script type="text/javascript">
 $(function(){
   var $elems = $('.animateblock');
   var winheight = $(window).height();

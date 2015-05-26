@@ -1,0 +1,114 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>تاریخچه</title>
+    <meta charset="UTF-8">
+   <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+    <meta name="" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+     </head>
+     
+     <!-- function js for menu-->
+    <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    <!-- end function js for menu-->
+    
+     <!-- js effect menu -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 100,
+                nav = document.querySelector("nav");
+            if (distanceY > shrinkOn) {
+                classie.add(nav,"smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    
+    
+    
+    <body>
+<header>
+<div style="width:100%; float:right; padding:0 10%;">
+<div class="col-com-3">
+<span class="logo_frk col-mob-3 col-tab-3 "></span>
+<span class="name_frk col-mob-3 col-tab-3 "><b>فرازرایانه کیهان</b><br>
+<b class="name_frk_s">تولید و پشتیبان نرم افزار</b>
+</span>
+</div>
+<div class="col-com-3">
+
+<span class="phone_frk "></span>
+
+
+</div>
+
+</div>
+
+<nav class="clearfix">
+		<ul class="clearfix">
+			<li><a href="Home.html">صفحه اصلی</a></li>
+			<li><a href="project.html">پروژه ها</a></li>
+			<li><a href="#">ارتباط با مشتری</a></li>
+			<li><a href="AboutUs.html">درباره ما</a></li>
+			<li><a href="ContactUs.html">تماس با ما</a></li>
+				
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+</header>
+
+<article style="padding-bottom:60px;" class="project_back">
+<section class="content_about">
+<div class="row">
+<div class="col-com-4 contact_slide image-mask"><img src="images/history.jpg" class="image-page" /></div>
+<div class="col-com-2 slide-history"><h1>فرازرایانه با اهداف و دیگاه بلند مدت</h1><h2>ارتقای نرم افزار در سطح دنیا</h2></div>
+</div>
+<div class="row content-page">
+<h1>تاریخچه و عملکرد شرکت فرازرایانه</h1>
+<p>شرکت فراز رایانه کیهان با ارائه راهکارهای مناسب و به روز در جهت تولید نرم افزارهای حسابداری ومالی فعالیت قابل تأملی داشته و دارد. این شرکت در سال 1376 توسط مهندس مازیار حسن زاده مقدم (که تجربه فعالیت در شرکت توانیر و تعدادی از شرکت ها تحت پوشش وزارت نیرو را بعنوان کارشناس نرم افزار و برنامه نویس سیستمهای مالی را داشت) تاسیس شد . و این شرکت  تاکنون 3 نسل نرم افزار های خود را تجربه کرده است :
+  </p>
+  <p><span>نسل اول : </span>طراحی و پیاده سازی نرم افزارهای مالی تحت سیستم عامل DOC  که در بدو تاسیس شکل گرفت و اولین سیستم ، برنامه حسابداری طرحهای عمرانی بود که مخصوص نیروگاههای تولید برق طراحی شد و بعدها با اندکی توسعه توسط بسیاری شرکت ها تحت پوشش صنعت برق مورد استفاده قرار گرفت.</p>
+<p><span>نسل دوم : </span>در سال 1381 طراحی و پیاده سازی نرم افزارهای مالی تحت Sql Server 2000  و نرم افزارهای کاربردی ماکروسافت انجام شد. که در ابتدا یک نرم افزار حسابداری و تامین اعتبار بود و مخصوص شرکت های توانیر، سازمان توسعه برق ، مدیریت شبکه برق طراحی شد ، اما بعدها منطبق با رویه های کاری شرکت های برق منطقه ای و شرکت های توزیع برق  و نیروگاهها بازنگری و با یکپارچه سازی زیر سیستم ها (حسابداری ، تامین اعتبار ، دارایی های ثابت ، انبار ، حقوق دستمزد و پیمانکاران) به یک سیستم جامع مالی و اداری تبدیل شد، و با احتساب عاملین شرکت های توانیر و سازمان بهره وری انرژی (سابا) میتوان گفت مورد استفاده تمام شرکتهای صنعت برق قرار گرفت </p>
+<p><span>نسل سوم : </span>این شرکت از سال 1387 با بهره گیری از نیروهای متخصص اقدام به بروزرسانی و طراحی مجدد نرم افزارها باتکنولوژی .NetFramework  نموده است که همچنان این نرم افزارها درحال پیاده سازی میباشد و2 تفاوت عمده این نسل در مقایسه با نسلهای گذشته این بود که :</p>
+<ul>
+<li>صرفا اختصاص به سیستم های مالی نداشت و تلاش در جهت ارتقا و تحت پوشش قراردادن فرآیندهای مختلف سازمانی بصورت مستقل از سیستم های مالی در نظر گرفته شد</li>
+<li>بازار هدف دیگر صرفا صنعت برق نبود و  آّب و فاضلاب  ، صنایع بهداشت و درمان  ، صنایع چوب ، صنعت نشریه و ... بعنوان بازار های هدف بعدی لحاظ شدند.</li>
+</ul>
+</div>
+</section>
+</article>
+</body>
+</html>
