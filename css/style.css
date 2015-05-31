@@ -90,18 +90,7 @@ padding-top: 10px;
 .clearfix {
     *zoom: 1;
 }
-@media (max-width: 1200px)
-.container {
-width: 1170px;
-}
-@media (max-width: 992px)
-.container {
-width: 970px;
-}
-@media (max-width: 768px)
-.container {
-width: 750px;
-}
+
 .container {
 padding-right: 10%;
 padding-left: 10%;
@@ -174,10 +163,65 @@ width:100%;
 	{
 		width:15.66666%;
 	}
-
-@media(max-width:992px)
-{
-.col-desk-1,.col-desk-2,.col-desk-3,.col-desk-4,.col-desk-5,.col-desk-6
+	
+	
+	
+	/*==========  Non-Mobile First Method  ==========*/
+ 
+	/* Large Devices, Wide Screens */
+	@media only screen and (max-width : 1200px){
+		
+		
+		
+		.col-desk-1,.col-desk-2,.col-desk-3,.col-desk-4,.col-desk-5,.col-desk-6
+	{
+		float:right;
+	}
+	.col-desk-6
+	{
+		width:100%;
+	}
+	.col-desk-5
+	{
+		width:83.33333%;
+	}
+	.col-desk-4
+	{
+		width:66.6666%;
+	}
+	.col-desk-3
+	{
+		width:50%;
+	}
+	.col-desk-2
+	{
+		width:33.3333%;
+	}
+	.col-desk-1
+	{
+		width:16.66666%;;
+	}
+	
+	.social_network
+	{
+		display: none !important;
+	}
+	.wrap-image img
+	 {
+		 width:100%;
+	 }
+	.wrap-image img
+	 {
+		 width:100%;
+	 }	
+ 
+	}
+ 
+	/* Medium Devices, Desktops */
+	@media only screen and (max-width : 992px){
+		
+		
+		.col-desk-1,.col-desk-2,.col-desk-3,.col-desk-4,.col-desk-5,.col-desk-6
 	{
 		float:right;
 	}
@@ -209,10 +253,45 @@ width:100%;
 	 {
 		 width:100%;
 	 }	
+	 	.col-com-2.col-tab-6.col-mob-6.slide-history
+	{
+		position:relative;
+		width:100%;
+		height:auto;
+	}
+	.image-mask:after
+	{
+		display:none;
+	}
+	.image-mask
+	{
+		width:100%;
+	}
+	.col-com-2.col-tab-6.col-mob-6.slide-history h1 {
+  margin-right: 0;
 }
-@media(max-width:767px)
-{
-	.col-tab-1,.col-tab-2,.col-tab-3,.col-tab-4,.col-tab-5,.col-tab-6
+ .col-com-2.col-tab-6.col-mob-6.slide-history p
+ {
+	 padding:20px;
+ }
+ .content_tab_about p a
+ {
+	 font-size:10px;
+	 padding:10px;
+ }
+	}
+ 
+	/* Small Devices, Tablets */
+	@media only screen and (max-width : 768px){
+		
+		.col-com-2.col-tab-6.col-mob-6.slide-history
+	{
+		position:relative;
+		width:100%;
+		height:auto;
+	}
+		
+		.col-tab-1,.col-tab-2,.col-tab-3,.col-tab-4,.col-tab-5,.col-tab-6
 	{
 		float:right;
 	}
@@ -244,10 +323,62 @@ width:100%;
 	 {
 		 width:100%;
 	 }
+	 
+	 
+		
+		.image-mask:before
+  {
+	border:0;  
+  }
+  .image-mask:after {
+ display:none;
+  
 }
-@media(max-width:480px)
-{
-	.col-mob-1,.col-mob-2,.col-mob-3,.col-mob-4,.col-mob-5,.col-mob-6
+.slide-history
+		{
+			position:relative;
+		}
+		.image-mask
+		{
+			width:100%;
+		}
+		
+	}
+		
+		
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  
+		.col-com-2.col-tab-6.col-mob-6.slide-history
+	{
+		position:relative;
+		width:100%;
+		height:auto;
+	}
+	.image-mask
+		{
+			width:100%;
+		}
+		.image-mask:after
+		{
+			display:none;
+		}
+		.col-com-2.col-tab-6.col-mob-6.slide-history h1
+		{
+			margin-right:0;
+			
+		}
+		
+}
+		
+ 
+	
+ 
+	/* Extra Small Devices, Phones */
+	@media only screen and (max-width : 480px){
+		.col-mob-1,.col-mob-2,.col-mob-3,.col-mob-4,.col-mob-5,.col-mob-6
 	{
 		float:right;
 	}
@@ -279,19 +410,31 @@ width:100%;
 	 {
 		 width:100%;
 	 }
-}
+	 
+	 .content_tab_about.resp-tab-content.resp-tab-content-active
+	{
+		padding:8px;
+	}
+	iframe
+	{
+		width:300px;
+	}
+ 
+	}
+ 
+	/* Custom, iPhone Retina */
+	@media only screen and (max-width : 320px){
+ 
+	}
+
+
+
+
 
 
 @media screen and (max-width: 1199px)
 {
-	.social_network
-	{
-		display: none !important;
-	}
-	.wrap-image img
-	 {
-		 width:100%;
-	 }
+	
 }
 .col-com-1,.col-com-2,.col-com-3,.col-com-4,.col-com-5,.col-com-6,
 .col-mob-1,.col-mob-2,.col-mob-3,.col-mob-4,.col-mob-5,.col-mob-6,
@@ -307,12 +450,14 @@ width:100%;
     .hidden-mob {
         display: none !important;
     }
+	
 }
 
 @media(max-width:768px)  {
     .hidden-tab {
         display: none !important;
     }
+	
 }
 
 @media(max-width:992px) and (max-width:1199px) {
@@ -466,6 +611,10 @@ nav a#pull {
 	{
 		padding-left:85%;
 	}
+	
+	
+	
+	
 }
 
 /*Styles for screen 515px and lower*/
@@ -1176,6 +1325,7 @@ content: "\f196";
 	line-height:20px;
 	font-size:11px;
 	margin:0;
+	direction:rtl;
 }
 .summary-text h1
 {
@@ -1662,7 +1812,7 @@ border-top: 1px solid #c1c1c1 !important;
 }
 
 /*Here your can change the breakpoint to set the accordion, when screen resolution changed*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 992px) {
 ul.resp-tabs-list {
 display: none;
 }
@@ -1685,6 +1835,13 @@ display: none !important;
 .resp-vtabs .resp-tab-content:last-child {
 border-bottom: 1px solid #c1c1c1 !important;
 }
+.content_tab_about.resp-tab-content.resp-tab-content-active
+{
+	height:auto;
+	padding-bottom:20px 11px;
+}
+
+
 }
 
 .tab_about
@@ -1722,7 +1879,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eff5fc', end
 
 
 box-shadow: 0px 2px 2px 2px rgba(125,125,125,0.5);
-height:340px;
+height:360px;
 
 
 }
@@ -1738,6 +1895,10 @@ line-height:25px;
 {
 	padding:0;
 	font-size:25px;
+}
+.resp-tab-content
+{
+	padding:15px;
 }
 
 .content-link
@@ -1833,6 +1994,7 @@ box-shadow: 0px 2px 2px 2px rgba(125,125,125,0.5);
 height:340px;
 
 }
+
 /*----- end tab css ----- */
 
 
@@ -2120,7 +2282,8 @@ border:0;
 {
 	width: 100%;
   background-color: #fff;
-  height: 393px;
+  height: 343px;
+  padding-top:50px;
 }
 
 .contact p
@@ -2259,7 +2422,8 @@ border:0;
 {
 background-color:#ffffff;
 direction:rtl;
-padding-bottom:70px;	
+padding-bottom:70px;
+padding-top:40px;	
 }
 .content-page h1
 {
@@ -2298,6 +2462,7 @@ padding-bottom:70px;
   {
 	  font-size:13px;
 	  line-height:25px;
+	  padding-left:30px;
   }
   .content-page ul li:before
   {
@@ -2328,6 +2493,11 @@ padding-bottom:70px;
 	  
 	  
   }
+  .image-mask img
+  {
+	  width:100%;
+  }
+  
   .image-mask:before
   {
 	content: '';
@@ -2337,16 +2507,14 @@ padding-bottom:70px;
   z-index: 0;
   width: 0;
   height: 0;
-  border-style: solid;
-  border-width: 290px 0 0 180px;
-  border-color: transparent transparent transparent #f7f7f7;  
+    
   }
   .image-mask:after {
   content: '';
   background-image: url(../images/intro-mask.png);
   position: absolute;
   top: 0;
-  left: 0;
+  left: -130px;
   width: 100%;
   height: 100%;
   background-size: 100%;
@@ -2355,14 +2523,38 @@ padding-bottom:70px;
 .slide-history
 {
 	position: absolute;
-  background-color: #fff;
-  height: 300px;
+  padding-top: 20px;
+  height: 350px;
+  width:45%;
 }
 .slide-history h1
 {
-	padding:0;
+	padding: 0 10%;
+  color: rgba(101,141,114,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  font-size: 35px;
+  margin-right: 40%;
+ 
 }
 .slide-history h2
 {
 	text-align:right;
+	padding-right: 30%;
+	font-size:23px;
 }
+.slide-mask
+{
+	background-color:#fff;
+	border-bottom: 1px solid #80868C;
+}
+.slide-history p
+{
+	text-align: justify;
+  padding: 0 0 20px 20px;
+  font-size: 14px;
+  direction: rtl;
+  line-height: 25px;
+}
+
+	
+	
