@@ -460,7 +460,18 @@ and (orientation : landscape) {
     .hidden-tab {
         display: none !important;
     }
-	
+	.news.fa
+	{
+		border:0;
+	}
+	.fa.box_download
+	{
+		border:0;
+	}
+	<pseudo:before>
+	{
+		text-shadow:0 0 0 #efefef;
+	}
 }
 
 @media(max-width:992px) and (max-width:1199px) {
@@ -1922,6 +1933,11 @@ line-height:25px;
   font-weight: bold;
 
 }
+.content-link a:hover
+{
+	  border-bottom: 3px solid #3D8EEB;
+  box-shadow: 3px 3px 3px rgba(195 , 195, 195 ,07);
+}
 
 .record_tab
 {background: #eeeeee; /* Old browsers */
@@ -2242,16 +2258,35 @@ list-style-type: square;
 font-size: 9px;
 line-height: 15px;
 }
+.list_abut h3
+{
+	font-size:12px;
+	line-height:25px;
+	color:#00bed4;
+	font-weight:normal;
+	padding-right:20px;
+	
+	
+}
 .list_abut dl dd
 {
 margin:0;
 }
-.list_abut dl dd:after
+.list_abut ul 
+{
+	padding:15px;
+	direction:rtl;
+	float:right;
+	list-style:none;
+	line-height:18px;
+}
+.list_abut dl dd:before, .list_abut ul li:before
 {
 	content: "\f0c8";
 	font-size:12px;
 	color:#00bed4;
 	padding-left:10px;
+	float:right;
 }
 .image_software
 {
@@ -2443,6 +2478,7 @@ padding-top:40px;
   color: #3EB9CF;
   padding-right: 30px;
 }
+
 .content-page p
 {
 	  padding:0 30px 15px;;
