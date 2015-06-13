@@ -471,16 +471,51 @@ and (orientation : landscape) {
 	{
 		padding:8px 8px 60px 8px;
 	}
-	iframe
-	{
-		width:300px;
-	}
+	div.map-frk iframe
+ {
+	 width:300px;
+ }
 	 .content_tab_about p a
 	 {
 		 font-size:8px;
 		 margin-right:12%;
 	 }
+	 section.content_about
+	 {
+		 width:100%;
+	 }
+	 .row
+	 {
+		 margin-right:0;
+	 }
+	
+ div.contact
+ {
+	 height:250px;
+ }
+ a.app-download
+ {
+	 right:20%;
+ }
  
+ .section-download p
+ {
+	 padding:0 0 0 30px;
+ }
+ div.content-page ul li, div.Records_about ul li, div.section-download-list ul li
+ {
+	 padding:0 0 0 30px;
+ }
+ 
+ .project_back.bottom h1, h1.title-app
+ {
+	 font-size:30px;
+ }
+section.container
+{
+	margin:0;
+	padding:0;
+}
 	}
  
 	/* Custom, iPhone Retina */
@@ -490,6 +525,25 @@ and (orientation : landscape) {
 		 font-size:8px;
 		 margin-right:0;
 	 }
+ 
+ 
+ 
+ h1
+ {
+	 font-size:30px;
+ }
+ div.map-frk iframe
+ {
+	 width:260px;
+ }
+ a.app-download
+ {
+	 right:0;
+ }
+ .wrap-image img
+ {
+	 width:280px;
+ }
  
 	}
 
@@ -751,7 +805,11 @@ nav a#pull {
 	}
 	 .wrap-image img
 	 {
-		 width:400px;
+		 width:100%;
+	 }
+	 div.col-right-content ul li
+	 {
+		 padding-right:10px;
 	 }
 }
 
@@ -2499,7 +2557,15 @@ border:0;
 	width: 90%;
   background-color: #fff;
   margin: 15px;
+  float:left;
 
+}
+
+.map-frk iframe
+{
+	width:500px;
+	height:360px;
+	border:0;
 }
 
 /* animated elements width scroll */
@@ -2639,7 +2705,7 @@ padding-top:40px;
 	  font-size:13px;
 	  line-height:25px;
 	  padding-right:30px;
-	  text-align:right;
+	  text-align:justify;
 	    direction: rtl;
   }
  
@@ -3001,6 +3067,7 @@ padding-top:40px;
   font-size: 20px;
   color: #0DD0E7;
   direction:rtl;
+  line-height:30px;
 }
 .section-download-list ul li:before
 {
@@ -3074,55 +3141,25 @@ padding-top:40px;
   padding: 10px 0;
   bottom: 0;
 }
-/*
-.fa-download:after
+.app-download-image img
 {
-	  content: "\f019";
-  
+	margin-top:70px;
+	
+}
+.section-download p
+{
+	font-size: 13px;
+  line-height: 25px;
+  text-align: justify;
+  direction: rtl;
+  margin-top:60px;
+}
+.bottom
+{
+	padding-bottom:60px;
+	float:left;
+}
 
-  text-align: right;
-  font-size: 20px;
-  border-left: 1px solid #B5B5B5;
-  margin-left: 20px;
-  padding: 6px 0 9px 7px;
-  
-}
-.app-download:hover .fa-download2
-{
-	
-	margin-top:0;
-	color:red;
-}
-.fa-download2
-{
-	
-	-webkit-transition: transform 1s linear .2s;
-  transition: transform 1s linear .2s;
-  color: #00bed4;
-  overflow: hidden;
-  position: relative;
-  margin-top:-30px;
-	
-}
-.fa-download2:after
-{
-	 content: "\f019";
-  
-  
-  text-align: right;
-  font-size: 20px;
-  border-left: 1px solid #B5B5B5;
-  margin-left: 20px;
-  padding: 6px 0 9px 7px;
-  position:relative;
-  
-  
-position:absolute;
-top:0;
-left:0;
-margin-top:-40px;
-}
-*/
 
 
 
