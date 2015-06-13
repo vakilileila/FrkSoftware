@@ -1747,11 +1747,7 @@ height:25px;
     padding: 100px 0px 5px 0px;
 	text-align:center;
 }
-.title-app
-{
-	  padding: 0;
-  margin: 50px 0 0px 0;
-}
+
 .project_back h1 span{
 	color: #00bed4;
 text-shadow: 1px 1px 1px rgba(152, 228, 254, 0.4);
@@ -2948,6 +2944,12 @@ padding-top:40px;
     -ms-animation-delay:5.7s;
         animation-delay:5.7s;
 }
+.title-app
+{
+	    padding: 0 0 30px 0;
+  margin: 50px 0 0px 0;
+  border-bottom: .1rem solid #ECE9E9;
+}
 .app-slide h3
 {
 	padding-top:60px;
@@ -2989,33 +2991,36 @@ padding-top:40px;
 	  width: 100%;
   float: right;
   text-align: right;
-  padding: 70px 0;
-  border-bottom: .15rem solid #ddd;
+  padding: 0 20px 70px 0;
+  border-bottom:2px solid #dddddd;
+  
+}
+.section-download h2
+{
+	font-weight: normal;
+  font-size: 20px;
+  color: #0DD0E7;
+  direction:rtl;
 }
 .section-download-list ul li:before
 {
 	content: "\f00c";
 	font-size:15px;
 }
-.section-download h2
+
+.section-download h2 img
 {
-	border-top:2px solid #ddd;
-}
-.section-download h2 span
-{
-	  background-color: #ddd;
-  padding: 7px 30px 40px 60px;
-  border-bottom-left-radius: 100%;
-  font-size: 20px;
-  font-weight: normal;
+	  position: relative;
+  top: 20px;
+  left: 10px;
 }
 .section-download-list ul
 {
-	margin-top:100px;
+	margin-top:60px;
 }
 .app-download
 {
-	 right: 50%;
+	 right: 40%;
   top: 50px;
   position: relative;
   display: inline-block;
@@ -3032,20 +3037,49 @@ padding-top:40px;
   outline: none;
   border-radius: 5px;
   margin-bottom: 1px;
-  padding: 10px 10px 10px 30px;
+  padding: 10px 10px 10px 40px;
+    width: 200px;
+	text-align:center;
 }
 .fa-download
 {
--webkit-transition: transform 1s linear .2s; /* For Safari 3.1 to 6.0 */
-    transition: transform 1s linear .2s;
-	color:#efefef
+-webkit-transition: background-position .5s linear .2s; /* For Safari 3.1 to 6.0 */
+    transition: background-position .5s linear .2s;
+	background:url(../images/glyphicons-download.png) no-repeat;
+	width: 22px;
+  height: 22px;
+  margin-left:15px;
+    left: 50px;
+  position: relative;
 		
 }
+.app-download:hover .fa-download
+{
+	background-position:0 -24px;
+}
+.app-download:hover
+{
+	background-color:#147BA9;
+	box-shadow:0 2px 2px rgba(199,217,227,1.00);
+	color:#CAEDFD;
+}
+
+.app-download-separate
+{
+	position: absolute;
+  height: 20px;
+  width: 1px;
+  background-color: #1899D3;
+  margin-left: 45px;
+  padding: 10px 0;
+  bottom: 0;
+}
+/*
 .fa-download:after
 {
 	  content: "\f019";
   
-  /* padding-left: 5px; */
+
   text-align: right;
   font-size: 20px;
   border-left: 1px solid #B5B5B5;
@@ -3053,36 +3087,42 @@ padding-top:40px;
   padding: 6px 0 9px 7px;
   
 }
-.app-download:hover .fa-download
+.app-download:hover .fa-download2
 {
 	
+	margin-top:0;
 	color:red;
 }
 .fa-download2
 {
-	-webkit-transition: transform 1s linear .2s; /* For Safari 3.1 to 6.0 */
-    transition: transform 1s linear .2s;
-	color:#00bed4
-	width:200px;
-height:150px;
-position:absolute;
-top:0;
-left:0;
-margin-top:-160px;
+	
+	-webkit-transition: transform 1s linear .2s;
+  transition: transform 1s linear .2s;
+  color: #00bed4;
+  overflow: hidden;
+  position: relative;
+  margin-top:-30px;
+	
 }
 .fa-download2:after
 {
 	 content: "\f019";
   
-  /* padding-left: 5px; */
+  
   text-align: right;
   font-size: 20px;
   border-left: 1px solid #B5B5B5;
   margin-left: 20px;
   padding: 6px 0 9px 7px;
   position:relative;
-  margin:-40px 0;
+  
+  
+position:absolute;
+top:0;
+left:0;
+margin-top:-40px;
 }
+*/
 
 
 
