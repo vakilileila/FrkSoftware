@@ -427,6 +427,36 @@ and (orientation : landscape) {
 	{
 		width:27%;
 	}
+	ul#vertical
+	{
+		padding-right:30px;
+		padding-left:0;
+	}
+	#vertical h2:after
+	{
+		left:85%;
+	}
+	.news.fa
+	{
+		border:0;
+	}
+	.fa.box_download:before
+	{
+		text-shadow: 0px 0px 0px rgba(195, 194, 194, 0);
+	}
+	.box {
+  float: right;
+  position: relative;
+  right: 20%;
+}
+.fa.box_download
+{
+	border:0;
+}
+h1.bg-h-download
+{
+	border:0;
+}
 }
 		
  
@@ -773,7 +803,10 @@ nav a#pull {
 		padding-left:85%;
 	}
 	
-	
+	.row.Records_about ul li
+	{
+		text-align:right;
+	}
 	
 	
 }
@@ -811,6 +844,14 @@ nav a#pull {
 	 {
 		 padding-right:10px;
 	 }
+	 ul#vertical
+	 {
+		 padding-right:20px;
+	 }
+	 #vertical h2:after
+	 {
+		 left:82%;
+	 }
 }
 
 /*Smartphone*/
@@ -823,6 +864,10 @@ nav a#pull {
 	nav li a {
 		border-bottom: 1px solid #576979;
 	}
+	 #vertical h2:after
+	 {
+		 left:82%;
+	 }
 }
 /*--------------end css menu--------------*/
 /*--------------- css slideshow ----------*/
