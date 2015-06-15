@@ -13,7 +13,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    
+     <style>
+                /* jssor slider bullet navigator skin 03 css */
+                /*
+                .jssorb03 div           (normal)
+                .jssorb03 div:hover     (normal mouseover)
+                .jssorb03 .av           (active)
+                .jssorb03 .av:hover     (active mouseover)
+                .jssorb03 .dn           (mousedown)
+                */
+                .jssorb03 div, .jssorb03 div:hover, .jssorb03 .av
+                {
+                    background: url(../images/b03.png) no-repeat;
+                    overflow:hidden;
+                    cursor: pointer;
+                }
+                .jssorb03 div { background-position: -5px -4px; }
+                .jssorb03 div:hover, .jssorb03 .av:hover { background-position: -35px -4px; }
+                .jssorb03 .av { background-position: -65px -4px; }
+                .jssorb03 .dn, .jssorb03 .dn:hover { background-position: -95px -4px; }
+            </style>
    
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/respond.js"></script>
