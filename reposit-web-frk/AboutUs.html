@@ -1,0 +1,428 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>درباره فرازرایانه کیهان</title>
+    <meta charset="UTF-8">
+   <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+   <!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+    <meta name="" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+     
+    <script type="text/javascript" src="js/easyResponsiveTabs.js"></script> 
+    
+    
+    
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script type="text/javascript" src="js/gallery.js"></script>
+     <script type="text/javascript" src="js/respond.js"></script>
+     </head>
+     
+     <!-- function js for menu-->
+    <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    <!-- end function js for menu-->
+    
+     <!-- js effect menu -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 100,
+                nav = document.querySelector("nav");
+            if (distanceY > shrinkOn) {
+                classie.add(nav,"smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    <!--- function slider for about>asnad----->
+    
+   
+    
+    
+    <body>
+<header>
+<div class="container">
+<div class="col-com-3">
+<span class="logo_frk col-mob-3 col-tab-3 "></span>
+<span class="name_frk col-mob-3 col-tab-3 "><b>فرازرایانه کیهان</b><br>
+<b class="name_frk_s">تولید و پشتیبان نرم افزار</b>
+</span>
+</div>
+<div class="col-com-3">
+
+<span class="phone_frk "><img src="images/phone.png"/></span>
+
+
+</div>
+
+</div>
+
+<nav class="clearfix ">
+		<ul class="clearfix navigation">
+			<li><a href="index.html">صفحه اصلی</a></li>
+			<li><a href="project.html">پروژه ها</a></li>
+			<li><a href="downloadAplication.html">ارتباط با مشتری</a></li>
+			<li><a href="AboutUs.html">درباره ما</a></li>
+			<li><a href="ContactUs.html">تماس با ما</a></li>
+				
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+</header>
+<article  class="project_back bottom">
+<section class="content_about">
+
+<div class="row">
+<div class="col-com-2 col-tab-6 col-mob-6 col-desk-6" >
+<ul class="accordion fa" id="vertical">
+		
+		<li class="slide-01">
+			
+			<div>
+				
+				<h2>خدمات فرازرایانه کیهان</h2>
+				<ul class="list_vertical_about fa">
+				<li><div class="image_software"><img src="images/frk-software-boxes.jpg" /></div><div class="titr_list_about">تولید نرم افزارهای مالی، بازرگانی</div>
+                <div class="list_abut"><dl> 
+                <dd>حسابداری</dd>
+                <dd>صورتهای مالی</dd>
+                <dd>حقوق ودستمزد</dd>
+                <dd>سیستم انبار</dd>
+                <dd>خرید و فروش</dd>
+                <dd>اموال وتاسیسات</dd>
+                <dd>ضمانتنامه(اسناد تضمینی</dd>
+                </dl>
+                </div></li>
+                <hr/ >
+                <li><div class="image_software"><img src="images/frk-software-boxes2.jpg" /></div><div class="titr_list_about">امکانات نرم افزارها </div>
+                <div class="list_abut"><dl> 
+                <dd>امکان تهیه پشتیبان</dd>
+                <dd>امکان جستجو</dd>
+                <dd>امکان پرینت از اطلاعات وارد شده</dd>
+                <dd> انجام تنظيمات توسط مدير سيستم</dd>
+                <dd>امکان تعریف گروههای کاربری بادسترسی مختلف</dd>
+                <dd>اموال وتاسیسات</dd>
+              
+                </dl>
+                </div></li>
+               
+                <hr/>
+               
+                </ul>
+				
+			</div>
+			
+		</li>
+		
+		<li class="slide-02 list_abut">
+
+			
+			<div>
+				
+				<h2>پشتیبانی نرم افزارهای طراحی شده</h2>
+				
+				<ul>
+                <li>پوشش نياز مشتري در طول زمان استفاده از نرم افزار</li>
+                <li>رفع اشکالات بوجود آمده جهت بهره برداری مطلوب</li>
+                <li>حفظ و نگهداری اطلاعات و ذخیره سازی مطمئن آنها</li>
+                <li>ارایه آخرین ویرایش های نرم افزار </li>
+                <li>نصب و راه اندازی این ویرایش ها برروی کامپیوترهای کارفرما</li>
+                <li>انجام عملیات تکمیلی و ارتقاء نرم افزار به منظور پاسخگوئی به نیازهای جدید</li>
+                
+                
+                </ul>
+                <h3>خدمات پشتیبانی با روش های زیر قابل ارایه خواهند بود</h3>
+				<ul>
+               <li>پاسخگوئی از طریق تلفن</li>
+               <li>پشتیبانی از طریق اینترنت</li> 
+               <li>حضور کارشناسان در محل کارفرما و رفع اشکال حضوری</li>
+                </ul>
+			</div>
+			
+		</li>
+		
+		<li class="slide-03 list_abut">
+			
+			<div>
+				
+				<h2>نرم افزارهای تخصصی در وزارت نیرو </h2>
+
+				
+<ul>
+<li>مادر تخصصی ها</li>
+<li>مدیریت تولید ،انتقال و توزیع نیروی برق ایران </li>
+<li>برق های منطقه ای ،توزیع ،تولید </li>
+<li>شرکت مدیریت شبکه برق ایران </li>
+<li>(سازمان بهره وری انرژی ایران (سابا</li>
+<li>(سازمان بهره وری انرژی ایران (سانا</li>
+<li>شرکت توزیع برق استان قم</li>
+<li>شرکت توزیع برق استان لرستان</li>
+</ul>				
+			</div>
+			
+		</li>
+        <li class="slide-05 list_abut">
+			
+			<div>
+				
+				<h2>طراحی سایت</h2>
+				
+				<ul>
+                <li>رعایت استاندارد W3C</li>
+                <li>طراحی زیبا و مدرن</li>
+                <li>با استفاده از جدیدترین متد های طراحی وب ....</li>
+                <li>بالا بردن رتبه شما در گوگل</li>
+                <li>بازاریابی اینترنتی</li>
+                <li>ایجاد صفحات داینامیک و استاتیک</li>
+                <li>پشتیبانی و بروزرسانی سایت شما</li>
+                <li>بالا بودن ترافیک سایت ( افزایش تعداد بازدیدکنندگان )</li>
+                <li>سفارش طراحی با توجه به نیاز و بودجه شما</li>
+                <li>ارائه کنترل پنل مدیریت وب سایت جهت اعمال تغییرات توسط خود مشتری</li>
+               <li>آموزش استفاده از کنترل پنل مدیریت وب سایت (در سایت های داینامیک)</li>
+               <li>بهره گیری از تکنولوژی های روز دنیا</li>
+                </ul>
+				
+			</div>
+			
+		</li>
+		
+		<li class="slide-04">
+			
+		
+				
+				<h2>سخت افزار</h2>
+				
+				
+
+				
+			
+			
+		</li>
+		
+		
+        
+
+		
+	</ul>
+</div>
+<div class="col-com-4 col-tab-6 col-mob-6 col-desk-6">
+<div id="horizontalTab">
+<ul class="resp-tabs-list">
+<li class=" fa tab_about "><p>درباره ما</p></li>
+<li class="fa record_tab"><p>سوابق اجرایی</p></li>
+<li class="fa Documents_tab"><p>اسناد وصلاحیت ها</p></li>
+</ul>
+<div class="resp-tabs-container">
+<div class="content_tab_about">
+<h1>درباره شرکت فرازرایانه کیهان</h1>
+
+<p >
+شرکت فرازرایانه کیهان با استفاده از 17 سال  تجربه خود در زمینه ی 
+طراحی و پیاده سازی سیستم های مالی در شرکت توانیر و بیش از پانزده شرکت و سازمان تحت پوشش صنعت برق،
+اقدام به یکپارچه سازی نرم افزارها و تهیه سیستم جامع مالی و بازرگانی نموده است.
+<br>
+نسل دوم این نرم افزارها اواخر دهه هفتاد در محیط ویندوز تهیه گردید و در نسل سوم نرم افزارها با استفاده از طراحی چندلایه و متدلوژی RUP در محیط .NET تهیه گردید و اکنون 
+در حال تهیه نرم افزارها تحت WEB و با استفاده از تکنولوژیهای روز دنیا مثل MVVM , MVC ,ASP... می باشد.<br>
+سیستم جامع شامل مجموعه نرم افزارهایی می باشد که ضمن رعایت یکپارچگی و جامعیت بانک اطلاعاتی دارای 
+محیط اجایی مستقل و متناسب با واحد استفاده کننده می باشد.
+</p>
+<p class="content-link">
+<a href="project.html">پروژه های انجام شده توسط فرازرایانه کیهان</a></p>
+</div>
+<div class="content_rcord">
+
+<div class="row Records_about fa">
+<h1>نمونه سوابق اجرایی شرکت فنی و مهندسی شرکت فرازرایانه کیهان</h1>
+<h3>سازمانها و شرکت هایی  که در صنعت برق از نرم افزارهای شرکت فرازرایانه کیهان استفاده می کند</h3>
+<div class="col-com-3 col-mob-6">
+<ul>
+<li>شرکت توانیر</li>
+<li>مدیریت شبکه برق تهران</li>
+<li>سازمان بهره وری انرژی (سابا)</li>
+<li>سازمان انرژیهای نو ایران (سانا)</li>
+<li>شرکت برق منطقه ی باختر</li>
+<li>شرکت توزیع استان کردستان</li>
+<li>شرکت توزیع استان لرستان</li>
+<li>شرکت باختر تولید و انتقال نیروی برق (بتانیر)</li>
+<li>شرکت توزیع برق قم</li>
+<li>شرکت توزیع برق گلستان</li>
+<li>شرکت توزیع مازندران</li>
+</ul>
+</div>
+<div class="col-com-3 col-mob-6">
+<ul>
+<li>شرکت توزیع برق استان مرکزی</li>
+<li>نیروگاه رامین اهواز</li>
+<li>برق منطقه ای هرمزگان-طرح جزایر جنوب</li>
+<li>شرکت گسترش نیروی اسمان</li>
+<li>شرکت مهندسین مشاور شبکه برق برنا</li>
+<li>شرکت ایستاسنج دقیق</li>
+<li>شرکت سهامی آب منطقه ای مرکزی</li>
+<li>شرکت موج نیرو </li>
+<li>شرکت بهینه سازی نیرو</li>
+<li>شرکت توزیع برق تهران بزرگ</li>
+<li>شرکت نواحی تهران بزرگ</li>
+</ul>
+</div>
+<h3>سازمانه و شرکت های خصوصی که از نرم افزارهای فرازرایانه کیهان استفاده می کنند</h3>
+
+<div class="col-com-3 col-mob-6">
+<ul>
+<li>شرکت افراش</li>
+<li>شرکت توزیع منبع</li>
+<li>شرکت سازرام</li>
+<li>شرکت سی تراول</li>
+<li>شرکت غرب نیرو</li>
+<li>شرکت نقشه پردازان آسیا</li>
+<li>شرکت آرمان نیروی سبلان</li>
+</ul>
+</div>
+<div class="col-com-3 col-mob-6 ">
+<ul>
+<li>شرکت پژوهشهای سازمانی</li>
+<li> شرکت زرین</li>
+<li>شرکت پاک پویش</li>
+<li>شرکت خاندان ماشین</li>
+<li>شرکت پزشکی آریا</li>
+<li>شرکت مرکز پزشکی هسته ای مطهری</li>
+<li>شرکت دانش گستر مهستان</li>
+</ul>
+</div>
+</div>
+
+</div>
+<div class="content_Documents_tob">
+<div style="width:93%; float:right; height:300px; ">
+<div id="slider1_container" style="position: relative; top: 0px; left: -30px;
+        height: 300px; background: #191919; overflow: hidden; padding:10px 5px;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left:0;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 620px; height: 306px; overflow: hidden;">
+            
+            
+            
+            
+            <div>
+                <img u="image" src="images/asnad2.jpg" />
+                <img u="thumb" src="images/thumb/CertificateRankings.jpg" />
+            </div>
+            <div>
+                <img u="image" src="images/asnad1.jpg" />
+                <img u="thumb" src="images/thumb/thumbCertificateRankings.jpg" />
+            </div>
+            
+           
+        </div>
+        
+        <!-- Arrow Navigator Skin Begin -->
+        
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 108px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 108px; right: 8px">
+        </span>
+        <!-- Arrow Navigator Skin End -->
+        
+        <!-- Thumbnail Navigator Skin Begin -->
+        <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 620px; height: 100px; left:0px; bottom: 0px;">
+            <!-- Thumbnail Item Skin Begin -->
+           
+            <div u="slides" style="cursor: move;">
+                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
+                    <div class=w><thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate></div>
+                    <div class=c>
+                    </div>
+                </div>
+            </div>
+            <!-- Thumbnail Item Skin End -->
+        </div>
+        <!-- Thumbnail Navigator Skin End -->
+        
+        <!-- Trigger -->
+        <script>
+            jssor_slider_starter('slider1_container');
+        </script>
+    </div>
+    </div>
+
+</div>
+</div>
+</div>
+</div>
+
+</div>
+        <script type="text/javascript" src="js/currentPageNav.js"></script>
+
+</section>
+</article>
+<footer style="background-color:#00bed4; float:right;width:100%; height:50px; position:relative; bottom:0;  ">copyright</footer>
+</body>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#horizontalTab').easyResponsiveTabs({
+            type: 'default', //Types: default, vertical, accordion           
+            width: 'auto', //auto or any width like 600px
+            fit: true   // 100% fit in a container
+        });
+
+        $('#verticalTab').easyResponsiveTabs({
+            type: 'vertical',
+            width: 'auto',
+            fit: true
+        });
+    });
+</script>
+     
+     </html>

@@ -1,0 +1,167 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>پروژه های فرازرایانه کیهان</title>
+    <meta charset="UTF-8">
+   <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+
+ <!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+    <meta name="" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+     <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/respond.js"></script>
+     <script type="text/javascript" src="js/modernizr.custom.js" ></script>
+     
+     <script type="text/javascript" src="js/jquery.gallery.js"></script>
+     
+     
+       <!-- function js for menu-->
+    <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    <!-- end function js for menu-->
+     <!-- js effect menu -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 50,
+                nav = document.querySelector("nav");
+            if (distanceY > shrinkOn) {
+                classie.add(nav,"smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    
+    <!----- function js for project --->
+   
+		<script type="text/javascript" src="js/jquery.gallery.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('#dg-container').gallery({
+					autoplay	:	true
+				});
+			});
+		</script>
+		
+		
+		/*----- current page-----/*
+        
+		
+		
+</head>
+
+<body>
+<header>
+<div class="container" >
+<div class="col-com-3">
+<span class="logo_frk col-mob-3 col-tab-3 "></span>
+<span class="name_frk col-mob-3 col-tab-3 "><b>فرازرایانه کیهان</b><br>
+<b class="name_frk_s">تولید و پشتیبان نرم افزار</b>
+</span>
+</div>
+<div class="col-com-3">
+
+<span class="phone_frk "><img src="images/phone.png"/></span>
+
+
+</div>
+
+</div>
+
+<nav class="clearfix">
+		<ul class="clearfix navigation">
+			<li><a  href="index.html">صفحه اصلی</a></li>
+			<li><a href="project.html">پروژه ها</a></li>
+      <li><a href="downloadAplication.html">ارتباط با مشتری</a></li>
+			<li><a href="AboutUs.html">درباره ما</a></li>
+			<li><a href="ContactUs.html">تماس با ما</a></li>
+				
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+</header>
+<article class="project_back">
+
+				<h1>پروژه های انجام شده توسط <span>فرازرایانه کیهان</span></h1>
+				
+				
+				<ul class="list_software">
+				<li>حسابداری</li>
+				<li>حقوق ودستمزد</li>
+				<li>خرید وفروش</li>
+				</ul>
+				
+				<section id="dg-container" class="dg-container">
+				<div class="dg-wrapper">
+					<a href="#">
+					<span class="top-slide">پروژه توانیر انتقال وتوزیع برق ایران</span>
+					<img src="images/01.jpg" alt="image01"><div>http://www.tavanir.org.ir/</div></a>
+					<a href="#">
+					<span class="top-slide">شرکت مدیریت شبکه برق ایران</span>
+					<img src="images/modiriat_shabake.jpg" alt="image02"><div>http://www.igmc.ir/</div></a>
+					<a href="#">
+					<span class="top-slide">(سازمان بهره وری انرژی ایران (سابا</span>
+					<img src="images/saba.jpg" alt="image03"><div>http://www.saba.org.ir/</div></a>
+					<a href="#">
+					<span class="top-slide">(سازمان بهره وری انرژی ایران (سانا</span>
+					<img src="images/sana.jpg" alt="image04"><div>http://www.suna.org.ir/</div></a>
+					<a href="#">
+					<span class="top-slide">شرکت توزیع برق استان قم</span>
+					
+					<img src="images/ghom_proj.jpg" alt="image05"><div>http://www.qepd.co.ir/</div></a>
+					
+				</div>
+				<!--nav>	
+					<span class="dg-prev">&lt;</span>
+					<span class="dg-next">&gt;</span>
+				</nav-->
+			</section>
+		
+</article>
+        <script type="text/javascript" src="js/currentPageNav.js"></script>
+
+<footer style="background-color:#00bed4; float:right;width:100%; height:50px;">copyright</footer>
+</body>
+</html>

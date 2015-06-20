@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <title>ویژگی نرم افزارها</title>
+    <meta charset="UTF-8">
+   <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+   <!--[if lt IE 9]>
+   <script>
+      document.createElement('header');
+      document.createElement('nav');
+      document.createElement('section');
+      document.createElement('article');
+      document.createElement('aside');
+      document.createElement('footer');
+   </script>
+<![endif]-->
+    <meta name="" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/respond.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    
+     </head>
+     
+     <!-- function js for menu-->
+    <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+        		var w = $(window).width();
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+    		});
+		});
+	</script>
+    <!-- end function js for menu-->
+    
+     <!-- js effect menu -->
+<script src="js/classie.js"></script>
+<script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 100,
+                nav = document.querySelector("nav");
+            if (distanceY > shrinkOn) {
+                classie.add(nav,"smaller");
+            } else {
+                if (classie.has(nav,"smaller")) {
+                    classie.remove(nav,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+</script>
+    
+    
+    
+    <body>
+<header>
+<div class="container" >
+<div class="col-com-3">
+<span class="logo_frk col-mob-3 col-tab-3 "></span>
+<span class="name_frk col-mob-3 col-tab-3 "><b>فرازرایانه کیهان</b><br>
+<b class="name_frk_s">تولید و پشتیبان نرم افزار</b>
+</span>
+</div>
+<div class="col-com-3">
+
+<span class="phone_frk "><img src="images/phone.png"/></span>
+
+
+</div>
+
+</div>
+
+<nav class="clearfix">
+		<ul class="clearfix navigation" >
+			<li><a href="index.html">صفحه اصلی</a></li>
+			<li><a href="project.html">پروژه ها</a></li>
+			<li><a href="downloadAplication.html">ارتباط با مشتری</a></li>
+			<li><a href="AboutUs.html">درباره ما</a></li>
+			<li><a href="ContactUs.html">تماس با ما</a></li>
+				
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+</header>
+
+<article  class="project_back bottom">
+<section class="content_about">
+<div class="row">
+<div class="col-com-6 contact_slide"><img src="images/Softwarefeatures.jpg" width="100%" /></div>
+</div>
+<div class="row content-page">
+<h1>معرفی ویژگیهای برخی از نرم افزارها</h1>
+<h3>ارتباط با مشتری:</h3>
+<ul>
+<li>یادآوری فعالیت های روزانه</li>
+<li>سابقه مشتری</li>
+<li>مشتری با تعداد نا محدود مشخصه (آدرس – تلفن – اشخاص مرتبط و ... )</li>
+<li>پیش فاکتور و استعلام قیمت</li>
+<li>ارسال ایمیل به صورت خبرنامه</li>
+<li>ارسال فکس (در صورت وجود زیر ساخت)</li>
+<li>ارزیابی عملکرد پرسنل بر اساس وظایف مختلف و گزارش های کنترلی</li>
+<li>امکان چاپ اطلاعات مشتری به صورت گروهی به روی انواع پاکت، لیبل و ....</li>
+<li>اتصال به سایت و به روز رسانی اطلاعات موجود در صفحات اینترنتی</li>
+<li>گزارشات نا محدود مدیریتی بر اساس نیاز سازمان</li>
+<li>مبتنی بر تکنیک .net و به روز ترین زبان دنیا</li>
+<li>پایگاه داده آزاد (Access, SQL2008, SQL2012, Oracle  )</li>
+</ul>
+<h3>بازرگانی:</h3>
+<ul>
+<li>امکان ایجاد پرونده بازرگانی و قابلیت پیگیری آن</li>
+<li>امکان ثبت و پیگیری مراحل مختلف بازرگانی از جزئیات PI و ثبت سفارش تا ترخیص و حمل و تحویل به انبار</li>
+<li>امکان کنترل و مدیریت زمان و پیش بینی مراحل مختلف از ابتدا به انتها و همچنین از انتها به ابتدا</li>
+<li>اتصال به سایت و به روز رسانی اطلاعات موجود در صفحات اینترنتی</li>
+<li>گزارشات نا محدود مدیریتی بر اساس نیاز سازمان</li>
+<li>مبتنی بر تکنیک .net و به روز ترین زبان دنیا</li>
+<li>پایگاه داده آزاد (Access, SQL2008, SQL2005, Oracle  )</li>
+</ul>
+</div>
+</section>
+</article>
+        <script type="text/javascript" src="js/currentPageNav.js"></script>
+
+</body>
+</html>
