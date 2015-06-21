@@ -2362,7 +2362,7 @@ line-height: 15px;
 {
 margin:0;
 }
-.list_abut dl dd:after,.Records_about ul li:before,.list_abut ul li:before
+.list_abut dl dd:after,.Records_about ul li:before,.list_abut ul li:before, .section-download-list ul li:before
 {
 	content: "\f0c8";
 	font-size:12px;
@@ -2589,11 +2589,12 @@ padding-top:40px;
 	  padding-right: 30px;
   font-size: 20px;
 }
-.content-page h3
+.content-page h3,.section-download-list h2
 {
 	  font-size: 15px;
   color: #3EB9CF;
   padding-right: 30px;
+  direction:rtl;
 }
 .content-page p
 {
@@ -2696,6 +2697,7 @@ padding-top:40px;
 	text-align:right;
 	padding-right: 30%;
 	font-size:23px;
+	
 }
 .slide-mask
 {
@@ -2842,6 +2844,7 @@ padding-top:40px;
 	font-size:60px;
 	animation-name:zoomIn;
 	animation-duration:2s;
+	font-weight:normal;
 	
 	
 	}
@@ -2855,7 +2858,7 @@ outline: 0px none;
 border: medium none;
 vertical-align: baseline;
 
- 
+ font-weight:normal;
 padding: 0.78571em 1.5em;
 text-transform: none;
 text-shadow: none !important;
@@ -2888,6 +2891,8 @@ color:#fff;
 	.app-slide h2
 	{
 		color: #0BE1F9 !important;
+		font-weight:normal;
+		font-size:1.5em;
 	}
 	.app-slide h2 span
 	{
@@ -2902,53 +2907,53 @@ color:#fff;
 	
 	.app-slide h2 span:nth-child(1)
 	{
-		animation-delay:.3s;
-		-webkit-animation-delay: .3s;
-	-moz-animation-delay: .3s;
-	-ms-animation-delay: .3s;
-	}
-	.app-slide h2 span:nth-child(2)
-	{
 		animation-delay:.5s;
 		-webkit-animation-delay: .5s;
 	-moz-animation-delay: .5s;
 	-ms-animation-delay: .5s;
 	}
+	.app-slide h2 span:nth-child(2)
+	{
+		animation-delay:.8s;
+		-webkit-animation-delay: .8s;
+	-moz-animation-delay: .8s;
+	-ms-animation-delay: .8s;
+	}
 	.app-slide h2 span:nth-child(3)
 	{
-		animation-delay:.7s;
-		-webkit-animation-delay: .7s;
-	-moz-animation-delay: .7s;
-	-ms-animation-delay: .7s;
+		animation-delay:1.1s;
+		-webkit-animation-delay: 1.1s;
+	-moz-animation-delay: 1.1s;
+	-ms-animation-delay: 1.1s;
 	}
 	
 	.app-slide h2 span:nth-child(4)
-	{
-		animation-delay:1s;
-		-webkit-animation-delay: 1s;
-	-moz-animation-delay: 1s;
-	-ms-animation-delay: 1s;
-	}
-	.app-slide h2 span:nth-child(5)
-	{
-		animation-delay:1.2s;
-		-webkit-animation-delay: 1.2s;
-	-moz-animation-delay: 1.2s;
-	-ms-animation-delay: 1.2s;
-	}
-	.app-slide h2 span:nth-child(6)
 	{
 		animation-delay:1.4s;
 		-webkit-animation-delay: 1.4s;
 	-moz-animation-delay: 1.4s;
 	-ms-animation-delay: 1.4s;
 	}
+	.app-slide h2 span:nth-child(5)
+	{
+		animation-delay:1.7s;
+		-webkit-animation-delay: 1.7s;
+	-moz-animation-delay: 1.7s;
+	-ms-animation-delay: 1.7s;
+	}
+	.app-slide h2 span:nth-child(6)
+	{
+		animation-delay:2s;
+		-webkit-animation-delay: 2s;
+	-moz-animation-delay: 2s;
+	-ms-animation-delay: 2s;
+	}
 	.app-slide h2 span:nth-child(7)
 	{
-		animation-delay:1.6s;
-		-webkit-animation-delay: 1.6s;
-	-moz-animation-delay: 1.6s;
-	-ms-animation-delay: 1.6s;
+		animation-delay:2.3s;
+		-webkit-animation-delay: 2.3s;
+	-moz-animation-delay: 2.3s;
+	-ms-animation-delay: 2.3s;
 	}
 	.app-slide h2 span:nth-child(8)
 	{
@@ -3003,7 +3008,7 @@ border: medium none;
 box-shadow: 0px 1px 0px #1E3B58;
 font-size: 15px !important;
 font-weight: bold !important;
-transition: background-color 0.2s ease 0s, color 0.2s ease 0s;
+transition: background-color 0.2s ease .2s, color 0.2s ease .2s;
 cursor: pointer;
 outline: medium none;
 border-radius: 5px;
@@ -3019,7 +3024,7 @@ padding: 10px 70px;
 	position:relative;
 	left:60px;
 	transition:all .2s ease .1s;
-	transition: background 1s linear 0.2s;
+	transition: background .4s linear 0.2s;
 	
 }
 .app-download-separate
@@ -3041,6 +3046,46 @@ margin: 0px 50px;
 	.app-download:hover .fa-download
 	{
 		background-position:0 -23px;
+	}
+	.title-app
+	{
+		  text-align: center;
+  font-size: 2em;
+    font-weight: normal;
+  padding: 50px 0 30px 0;
+  border-bottom: 1px solid #EFEDED;
+  color: rgba(101,141,114,0.9);
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+	}
+	.section-download
+	{
+		  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+	}
+	.app-download-image img
+	{
+		float: left;
+  margin-left: 50px;
+	}
+	.section-download-list img
+	{
+		padding-left: 10px;
+  position: relative;
+  top: 20px;
+	}
+	.section-download-list ul,.section-download-list p
+	{
+		  list-style: none;
+  float: right;
+  direction: rtl;
+  width: 100%;
+  padding: 40px;
+	}
+	.section-download-list ul li,.section-download-list p
+	{
+		line-height:25px;
+		font-size:.95rem;
+		text-align:justify;
 	}
 
 	
