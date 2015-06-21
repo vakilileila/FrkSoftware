@@ -772,10 +772,7 @@ border-left: 1px solid #15DEF6;
 		left: 15px;
 		
 	}
-	 .wrap-image img
-	 {
-		 width:400px;
-	 }
+	 
 	p.content-link a
 	 {
 		 margin-right:10%;
@@ -2876,7 +2873,7 @@ padding-top:40px;
 .app-slide
 {
 	margin:0;
-	padding:10rem 0;
+	padding:150px 0;
     animation-name:changcolor;
 	animation-duration:4s;
     position: relative;
@@ -2926,7 +2923,7 @@ border-radius: 0.2857rem;
 box-shadow: 0px 0px 0px 1px transparent inset, 0px 0px 0px 0px rgba(39, 41, 43, 0.15) inset;
 -moz-user-select: none;
 transition: opacity 0.1s ease 0s, background-color 0.1s ease 0s, color 0.1s ease 0s, box-shadow 0.1s ease 0s, #000 0.1s ease 0s;
-border: 0.15em solid rgb(0, 190, 212) !important;
+border: 0.15em solid #00bdd3 !important;
 padding: 1.2em 2em;
 margin-top:50px;
 color:#fff;
