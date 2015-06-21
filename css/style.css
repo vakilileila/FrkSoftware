@@ -480,16 +480,69 @@ and (orientation : landscape) {
 	}
 	div.map-frk iframe
 	{
-		width:320px;
+		width:300px;
+		padding:30px 0;
 	}
  div.content_tab_about p
  {
 	 margin: 0 20px 40px;
  }
+ 
+div.app-slide h1
+ {
+	 font-size:40px;
+ }
+ div.app-slide h2
+ {
+	 font-size:1em;
+	 line-height:25px;
+	 padding:0 10px;
+ }
+ div.app-slide h3 a
+ {
+	 font-size:.7em;
+ }
+ h1.title-app
+ {
+	 font-size:1.2em;
+ }
+ .col-com-3.col-tab-6.col-mob-6.col-desk-6.app-download-image img
+ {
+	 width:270px;
+	 margin:0
+ }
+ .app-slide
+ {
+	 padding:0;
+ }
+ 
+ div.section-download-list ul, div.section-download-list p
+ {
+	 padding:0;
+ }
+ div.section-download-list h2
+ {
+	   margin-top: 30px;
+  text-align: center;
+  padding: 0;
+  line-height:25px;
+ }
+ ul#vertical
+ {
+	 padding:0;
+ }
+ div.contact
+ {
+	 height:auto;
+ }
 	}
  
 	/* Custom, iPhone Retina */
 	@media only screen and (max-width : 320px){
+		div.map-frk iframe
+	{
+		width:220px;
+	}
  
 	}
 
@@ -1298,6 +1351,7 @@ background-image: linear-gradient(to bottom right, #ABF0F7 0%, #00BED4 100%);
     transition: background-image 1s linear 1s;
 	cursor:pointer;
 	border:1px solid #00bed4;
+	background-color:#00bed4;
 
 
 }
