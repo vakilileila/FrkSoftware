@@ -167,6 +167,14 @@ width:100%;
 	
 	
 	/*==========  Non-Mobile First Method  ==========*/
+	
+	@media only screen and (max-width : 1400px)
+	{
+		.blueberry
+		{
+			display:none;
+		}
+	}
  
 	/* Large Devices, Wide Screens */
 	@media only screen and (max-width : 1200px){
@@ -214,6 +222,11 @@ width:100%;
 	 {
 		 width:100%;
 	 }	
+	 
+	.blueberry
+	 {
+		 display:none;
+	 }
  
 	}
  
@@ -300,6 +313,11 @@ width:100%;
 	{
 		margin-right:20%;
 	}
+	
+	.blueberry
+	 {
+		 display:none;
+	 }
 	}
  
 	/* Small Devices, Tablets */
@@ -511,6 +529,11 @@ div.app-slide h1
 	 width:270px;
 	 margin:0
  }
+ .col-com-2.col-tab-6.col-mob-6.slide-history h2
+ {
+	 text-align:center;
+	 padding-right:0;
+ }
  .app-slide
  {
 	 padding:0;
@@ -535,6 +558,27 @@ div.app-slide h1
  {
 	 height:auto;
  }
+ div.dg-wrapper
+ {
+	 width:200px;
+ }
+ div.dg-wrapper a
+ { width:200px;
+ }
+ div.dg-wrapper img
+ {
+	 width:200px;
+ }
+ 
+ 
+div.dg-wrapper
+{
+	display:none;
+}
+.blueberry
+{
+	display:inline;
+}
 	}
  
 	/* Custom, iPhone Retina */
@@ -1649,6 +1693,55 @@ background: linear-gradient(left, rgba(233, 231, 231,0) 0%,rgba(233, 231, 231,0.
 
 
 /*-------- project page -------*/
+
+.blueberry { position:relative; bottom:500px; margin: 0 auto; }
+.blueberry .slides {
+	display: inline;
+	position: relative;
+	overflow: hidden;
+}
+.blueberry .slides li {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.blueberry .slides li img {
+	display: block;
+	width: 100%;
+	max-width: none;
+}
+.blueberry .slides li.active { display: block; position: relative; }
+.blueberry .crop li img { width: auto; }
+
+.blueberry .pager {
+	height: 40px;
+	text-align: center;
+}
+.blueberry .pager li { display: inline-block; }
+.blueberry .pager li a,
+.blueberry .pager li a span {
+	display: block;
+	height: 4px;
+	width: 4px;
+}
+.blueberry .pager li a {
+	padding: 18px 8px;
+-webkit-border-radius: 6px;
+   -moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.blueberry .pager li a span {
+	overflow: hidden;
+	background: #c0c0c0;
+	text-indent: -9999px;
+-webkit-border-radius: 2px;
+   -moz-border-radius: 2px;
+	border-radius: 2px;
+}
+.blueberry .pager li.active a span { background: #404040; }
+
+
 .project_back
 {
 	background: #333 url(../images/bg.jpg) repeat top left;
@@ -1755,7 +1848,7 @@ height:25px;
 	width: 24px;
 	height: 25px;
 	opacity: 0.8;
-	background: transparent url(../images/arrows.png) no-repeat top left;
+	background: transparent url(images/next.png) no-repeat top left;
 }
 .dg-container nav span:hover{
 	opacity: 1;
