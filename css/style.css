@@ -746,8 +746,7 @@ nav a#pull {
 .highlight a 
 {
 	color:#A7FFFF;
-	border-right: 1px solid #15DEF6;
-border-left: 1px solid #15DEF6;
+	
 
 }
 
@@ -1482,6 +1481,10 @@ content: "\f196";
 {
 	width:70%;
 	
+}
+.summary-text h1:hover
+{
+	color:#A38FEF;
 }
 .fa-phone
 {
@@ -2995,7 +2998,7 @@ vertical-align: baseline;
 padding: 0.78571em 1.5em;
 text-transform: none;
 text-shadow: none !important;
-font-weight: 700;
+
 line-height: 1;
 font-style: normal;
 text-align: center;
@@ -3014,7 +3017,7 @@ color:#fff;
 	.app-slide h3 a:hover
 	{
 		
-		border: 0.15em solid #0cf !important;
+		  border: 0.15em solid #4DC4D2 !important;
 		box-shadow:0px 0px 1px rgba(255,255,255, .7);
 		color:#0CF;
 		
@@ -3175,6 +3178,11 @@ margin: 0px 50px;
 	box-shadow: 0px 2px 0px #1E3B58;
 	color:#0CF;
 	}
+	.content-link a:hover
+	{
+		background-color:#437DBB;
+		border-bottom:3px solid #437DBB;
+	}
 	
 	.app-download:hover .fa-download
 	{
@@ -3220,6 +3228,85 @@ margin: 0px 50px;
 		font-size:.95rem;
 		text-align:justify;
 	}
+/*----- tooltip css ------ */
 
+.tooltip-container {
+	position:relative;	/* Forces tooltip to be relative to the element, not the page */
+	cursor:help;		/* Makes you cursor have the help symbol */
+}
+
+.tooltip {
+	display:block;
+	position:absolute;
+	width:150px;
+	padding:5px 15px;
+	left:50%;
+	bottom:25px;
+	margin-left:-95px;
+	/* Tooltip Style */
+	color:#fff;
+	border:2px solid rgba(34,34,34,0.9);
+	background:rgba(51,51,51,0.9);
+	text-align:center;
+	border-radius:3px;
+	/* Tooltip Style */
+	opacity:0;
+	box-shadow:0px 0px 3px rgba(0, 0, 0, 0.3);
+	-webkit-transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-0-transition:all 0.2s ease-in-out;
+	-ms-transition:all 0.2s ease-in-out;
+	transition:all 0.2s ease-in-out;
+	-webkit-transform:scale(0);
+	-moz-transform:scale(0);
+	-o-transform:scale(0);
+	-ms-transform:scale(0);
+	transform:scale(0);
+	/* reset tooltip, to not use container styling */
+	font-size:14px;
+	font-weight:normal;
+	font-style:normal;
+}
+
+.tooltip:before, .tooltip:after{
+	content:'';
+	position:absolute;
+	bottom:-13px;
+	left:50%;
+	margin-left:-9px;
+	width:0;
+	height:0;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-top:10px solid rgba(0,0,0,0.1);
+}
+.tooltip:after{
+	bottom:-12px;
+	margin-left:-10px;
+	border-top:10px solid rgba(34,34,34,0.9);
+}
+
+.bt_continue:hover .tooltip, a:hover .tooltip {
+	/* Makes the Tooltip slightly transparent, Lets the barely see though it */
+	opacity:0.9;
+	/* Changes the scale from 0 to 1 - This is what animtes our tooltip! */
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	-ms-transform:scale(1);
+	transform:scale(1);
+}
+
+/* Pure CSS3 Animated Tooltip - Custom Classes
+---------------------------------------------------- */
+.tooltip-style1 {
+	color:#000;
+	border:2px solid #fff;
+	background:rgba(246,246,246,0.9);
+	font-style:italic;
+}
+.tooltip-style1:after{
+	border-top:10px solid #fff;
+}
 	
 	
