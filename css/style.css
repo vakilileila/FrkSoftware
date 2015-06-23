@@ -170,7 +170,7 @@ width:100%;
 	
 	@media only screen and (max-width : 1400px)
 	{
-		.blueberry
+		#slideshow
 		{
 			display:none;
 		}
@@ -223,10 +223,10 @@ width:100%;
 		 width:100%;
 	 }	
 	 
-	.blueberry
-	 {
-		 display:none;
-	 }
+#slideshow
+		{
+			display:none;
+		}
  
 	}
  
@@ -314,10 +314,10 @@ width:100%;
 		margin-right:20%;
 	}
 	
-	.blueberry
-	 {
-		 display:none;
-	 }
+	#slideshow
+		{
+			display:none;
+		}
 	}
  
 	/* Small Devices, Tablets */
@@ -403,6 +403,10 @@ width:100%;
 		margin-right:20%;
 	}
 	
+	#slideshow
+		{
+			display:none;
+		}
 	}
 	
 		
@@ -452,6 +456,10 @@ and (orientation : landscape) {
 	{
 		margin-right:20%;
 	}
+	#slideshow
+		{
+			display:none;
+		}
 }
 		
  
@@ -575,10 +583,13 @@ div.dg-wrapper
 {
 	display:none;
 }
-.blueberry
-{
-	display:inline;
-}
+#slideshow
+		{
+			  display: block;
+  position: relative;
+  bottom: 450px;
+		}
+
 	}
  
 	/* Custom, iPhone Retina */
@@ -1694,52 +1705,30 @@ background: linear-gradient(left, rgba(233, 231, 231,0) 0%,rgba(233, 231, 231,0.
 
 /*-------- project page -------*/
 
-.blueberry { position:relative; bottom:500px; margin: 0 auto; }
-.blueberry .slides {
-	display: inline;
-	position: relative;
-	overflow: hidden;
-}
-.blueberry .slides li {
-	position: absolute;
-	top: 0;
-	left: 0;
-	overflow: hidden;
-}
-.blueberry .slides li img {
-	display: block;
-	width: 100%;
-	max-width: none;
-}
-.blueberry .slides li.active { display: block; position: relative; }
-.blueberry .crop li img { width: auto; }
 
-.blueberry .pager {
-	height: 40px;
-	text-align: center;
+#slideshow {
+    position:relative;
+    height:350px;
+	width:100%;
 }
-.blueberry .pager li { display: inline-block; }
-.blueberry .pager li a,
-.blueberry .pager li a span {
-	display: block;
-	height: 4px;
-	width: 4px;
+
+#slideshow IMG {
+    position:absolute;
+    top:0;
+    left:0;
+    z-index:8;
+    opacity:0.0;
+	width:100%;
 }
-.blueberry .pager li a {
-	padding: 18px 8px;
--webkit-border-radius: 6px;
-   -moz-border-radius: 6px;
-	border-radius: 6px;
+
+#slideshow IMG.active {
+    z-index:10;
+    opacity:1.0;
 }
-.blueberry .pager li a span {
-	overflow: hidden;
-	background: #c0c0c0;
-	text-indent: -9999px;
--webkit-border-radius: 2px;
-   -moz-border-radius: 2px;
-	border-radius: 2px;
+
+#slideshow IMG.last-active {
+    z-index:9;
 }
-.blueberry .pager li.active a span { background: #404040; }
 
 
 .project_back
